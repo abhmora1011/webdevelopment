@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&family=Caveat&family=Dancing+Script&family=Inria+Serif:wght@700&family=League+Spartan:wght@700;800&family=Libre+Baskerville&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* img {
+    height: 200px;
+    width: 200px;
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.landing__page {
+    display: flex;
+    justify-content: space-around;
+    height: 40rem;
+    background-image: url(./images/Background_Official.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+    font-family: 'League Spartan';
+}
+
+.landing__page > h2 {
+    align-self: self-start;
+    padding-top: 60px;
+    font-size: 40px;
+}
+
+.name__title {
+    align-self: self-end;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+.name__title > p{
+    font-family: serif;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    background-color: white;
+    height: 40rem;
+    text-align: center;
+    /* background-image: url(./images/bgprofile.png); */
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:hard-light;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.profile p {
+    padding-top: 20px;
+    font-size: 30px;
+    color: rgb(75, 73, 73);
+    text-shadow: 0px 1px 4px black;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skills img {
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.skills div q {
+    border-radius: 5px;
+    margin: 20 10;
+}
+
+.skills div p {
+    align-self: center;
+    font-size: 25px;
+    font-family: 'League Spartan';
+    margin-bottom: 10px;
+    color: rgb(129, 126, 123);
+}
+
+.work__exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.work__exp h1{
+    font-size: 2.9rem;
+    font-family: 'League Spartan';
+    color: rgb(158, 157, 157); 
+}
+
+.card_container {
+    display: flex;
+    gap: 20px;
+}
+
+.card_container > div {
+    margin-top: 20px;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 200px;
+}
+
+.card_container div > p:first-child, p:nth-child(2) {
+    font-weight: bold;
+}
+
+.contact__us {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.contact__us h1{
+    font-size: 2.9rem;
+    font-family: 'League Spartan';
+    color: rgb(158, 157, 157); 
+}
+
+.contact__us img {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.contact__us p {
+    font-size:25px;
+}
+
+@media (max-width: 1200px) {
+
+    .landing__page {
+        min-width: 1000px;
+    }
+
+
+    .container{
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    .skills {
+        flex-direction: column;
+    }    
+
+    .skills div {
+        width: 60%;
+        margin: auto;
+    }
+
+    .profile img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-size: 200px;
+    }
+    
+    .card_container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card_container div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        color: white;
+        background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;   
+    }
+
+    .card_container p{
+        font-size: 1.5rem;
+    }
+
+    .profile p {
+        color: white;
+        background-color: rgb(158, 148, 135);
+        text-shadow: 0px 1px 4px black;
+        padding: 10px;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
+
+    .profile {
+        background-size: 450px;
+    }
+
+    .profile img{
+        margin-top: 150px;
+    }
+    
+}
